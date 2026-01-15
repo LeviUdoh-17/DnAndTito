@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; // Assuming you have lucide-react or similar icon lib
 
 const navLinks = [
-  { name: "Our Story", href: "story" },
+  // { name: "Our Story", href: "story" },
   { name: "Gifts", href: "registry" }, // Changed href to match ID usually used for registry
 ];
 
@@ -56,7 +56,7 @@ export const Navbar = () => {
   return (
     <>
       <motion.div 
-        className={`fixed top-8 left-3 w-full z-[1000] flex px-4 pointer-events-none`}
+        className={`fixed top-8 left-3 w-full z-[10000] flex px-4 pointer-events-none`}
         animate={{
           justifyContent: isScrolled ? "center" : "flex-start"
         }}
@@ -83,7 +83,7 @@ export const Navbar = () => {
           `}
         >
           {/* --- LEFT LINK (Desktop) --- */}
-          <div className="hidden md:flex items-center">
+          {/* <div className="hidden md:flex items-center">
             <NavButton 
               link={navLinks[0]} 
               isActive={activeSection === navLinks[0].href}
@@ -92,7 +92,7 @@ export const Navbar = () => {
               activeBg={activeBgClass}
               hoverBg={hoverColorClass}
             />
-          </div>
+          </div> */}
 
           {/* --- CENTER LOGO --- */}
           <div className="px-2 flex flex-col items-center justify-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'})}>
@@ -121,9 +121,9 @@ export const Navbar = () => {
           {/* --- RIGHT LINK (Desktop) --- */}
           <div className="hidden md:flex items-center">
              <NavButton 
-              link={navLinks[1]} 
-              isActive={activeSection === navLinks[1].href}
-              onClick={() => scrollTo(navLinks[1].href)}
+              link={navLinks[0]} 
+              isActive={activeSection === navLinks[0].href}
+              onClick={() => scrollTo(navLinks[0].href)}
               textColor={textColorClass}
               activeBg={activeBgClass}
               hoverBg={hoverColorClass}
