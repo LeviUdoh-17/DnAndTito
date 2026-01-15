@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { BankDetailsCard } from "./BankDetailsCard";
 
 // --- Types & Data ---
@@ -90,8 +89,6 @@ const NoiseBackground = () => (
 // --- Main Component ---
 
 export default function GiftRegistrySection() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <section id="registry" className="relative w-full py-32 md:py-32 bg-[#FDFBF9] overflow-hidden">
       <NoiseBackground />
@@ -131,8 +128,6 @@ export default function GiftRegistrySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05, duration: 0.5 }}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               className="group flex flex-col bg-white border border-stone-100 rounded-[1.5rem] overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-stone-200/40 hover:-translate-y-1"
             >
               
