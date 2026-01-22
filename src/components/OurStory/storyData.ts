@@ -20,7 +20,7 @@ export const stories: Stories = {
       { id: "dn3", type: "video", src: "https://res.cloudinary.com/drnwxb8cm/video/upload/v1769124444/vid1_gjfmfm.mp4", caption: "Precious moments" },
       { id: "dn4", type: "image", src: "https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124402/WhatsApp_Image_2026-01-23_at_12.13.19_AM_t7vgm9.jpg", caption: "Together" },
       { id: "dn4", type: "image", src: "https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124394/WhatsApp_Image_2026-01-23_at_12.13.16_AM_rgoemo.jpg", caption: "Together" },
-      { id: "dn4", type: "image", src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop", caption: "Together" },
+      { id: "dn4", type: "image", src: "https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124393/WhatsApp_Image_2026-01-23_at_12.10.53_AM_1_ilr5yo.jpg", caption: "Together" },
     ],
   },
   tito: {
