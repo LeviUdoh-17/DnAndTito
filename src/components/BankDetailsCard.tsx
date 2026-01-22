@@ -1,14 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-// --- Data: Single Bank Detail ---
 const accountDetails = {
-  bankName: "United Bank for Africa, UBA",
-  accountName: "Akinola Boludade",
-  accountNumber: "2319849022",
+  bankName: "Access Bank",
+  accountName: "Dominion Akinsola",
+  accountNumber: "1866621145", 
 };
 
-// --- Sub-Component: The "Private Banking" Card ---
 const BankDetailsCard = () => {
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
@@ -20,29 +18,24 @@ const BankDetailsCard = () => {
 
   return (
     <div className="w-full max-w-2xl mx-auto mt-24 md:mt-32">
-       {/* Section Title */}
       <div className="text-center mb-12">
         <h3 className="font-serif text-3xl md:text-4xl text-stone-800 mb-4">The Future Fund</h3>
         <p className="text-stone-500 font-sans font-light">For those who prefer a direct contribution.</p>
       </div>
 
-      {/* The "Black Card" Container */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="relative overflow-hidden bg-[#1c1917] rounded-[2rem] shadow-2xl shadow-stone-900/20 p-8 md:p-12 text-stone-200"
       >
-        {/* Decorative background noise for texture */}
+
         <div className="absolute inset-0 opacity-[0.15] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
         
-        {/* Gold sheen gradient */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none" />
 
-        {/* Account Details */}
         <div className="relative z-10 flex flex-col items-center gap-8 text-center pt-4">
           
-          {/* Bank Name */}
           <div className="space-y-1">
             <span className="block text-[10px] uppercase tracking-widest text-stone-500">Bank Name</span>
             <div className="flex items-center gap-3 justify-center">
@@ -50,7 +43,6 @@ const BankDetailsCard = () => {
             </div>
           </div>
 
-          {/* Account Number (Click to Copy) */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -65,7 +57,6 @@ const BankDetailsCard = () => {
                 {accountDetails.accountNumber}
               </span>
               
-              {/* Copy Icon / Checkmark */}
               <div className="text-stone-500 group-hover:text-amber-400">
                 <AnimatePresence mode="wait">
                   {copiedField === 'number' ? (
@@ -88,7 +79,6 @@ const BankDetailsCard = () => {
               </div>
             </div>
             
-            {/* "Copied" Tooltip */}
             <AnimatePresence>
               {copiedField === 'number' && (
                 <motion.span 
@@ -101,7 +91,6 @@ const BankDetailsCard = () => {
             </AnimatePresence>
           </motion.button>
 
-          {/* Account Name */}
           <div className="space-y-1">
              <span className="block text-[10px] uppercase tracking-widest text-stone-500">Account Name</span>
              <p className="font-sans text-lg text-stone-300 tracking-wide">{accountDetails.accountName}</p>

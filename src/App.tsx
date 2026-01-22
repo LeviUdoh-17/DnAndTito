@@ -2,7 +2,7 @@ import './App.css'
 import MaskedVideoHero from './components/Hero'
 import ClipDefs from './components/Clipdef1';
 import ClipDefs1 from './components/Clipdef2';
-// import OurStorySection from './components/OurStory';
+import OurStorySection from './components/OurStory';
 import GiftRegistrySection from './components/GiftRegistry';
 import ParticleBackground from './components/ParticleBackground';
 import Navbar from './components/Navbar';
@@ -17,7 +17,7 @@ function App() {
         <ClipDefs />
         <ClipDefs1 />
         <MaskedVideoHero />
-        {/* <OurStorySection /> */}
+        <OurStorySection />
         <GiftRegistrySection />
       </div>
     </div>
