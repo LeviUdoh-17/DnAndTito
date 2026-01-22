@@ -6,6 +6,7 @@ import OurStorySection from './components/OurStory';
 import GiftRegistrySection from './components/GiftRegistry';
 import ParticleBackground from './components/ParticleBackground';
 import Navbar from './components/Navbar';
+import ProposalVideoSection from './components/Proposalvideosection';
 
 function App() {
 
