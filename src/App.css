@@ -23,3 +23,28 @@ html, body {
 .shadow-lg {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
 }
+
+/* Custom Scrollbar - Slim Gold */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #bf953f, #fcf6ba, #b38728);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #d4a84b, #fff8c5, #c9993a);
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #bf953f transparent;
+}
