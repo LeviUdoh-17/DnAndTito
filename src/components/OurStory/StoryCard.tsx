@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../utils/cn";
-import { StoryData } from "./types";
+import type { StoryData } from "./types";
 import { MobilePhotoStrip } from "./MobilePhotoStrip";
 import { StoryContent } from "./StoryContent";
 

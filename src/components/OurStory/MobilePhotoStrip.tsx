@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../utils/cn";
-import { MediaItem } from "./types";
+import type { MediaItem } from "./types";
 
 interface MobilePhotoStripProps {
   media: MediaItem[];

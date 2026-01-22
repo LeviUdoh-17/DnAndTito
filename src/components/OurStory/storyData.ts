@@ -1,4 +1,4 @@
-import { Stories } from "./types";
+import type { Stories } from "./types";
 
 export const stories: Stories = {
   dn: {
