@@ -17,6 +17,7 @@ function App() {
         <ClipDefs />
         <ClipDefs1 />
         <MaskedVideoHero />
+        <ProposalVideoSection videoSrc='https://res.cloudinary.com/drnwxb8cm/video/upload/v1769119360/Por_1_wmtqtp.mp4' />
         <OurStorySection />
         <GiftRegistrySection />
       </div>
