@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -81,7 +81,6 @@ export default function ProposalVideoSection({
   subheadline = "The beginning of forever",
 }: ProposalVideoProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -100,7 +99,6 @@ export default function ProposalVideoSection({
       videoRef.current.pause();
     } else {
       videoRef.current.play();
-      setHasInteracted(true);
     }
     setIsPlaying(!isPlaying);
   };
