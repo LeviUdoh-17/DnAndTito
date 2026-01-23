@@ -41,7 +41,8 @@ export const RSVPCard = () => {
 
   const handleSubmit = async (values: RSVPFormValues) => {
     try {
-      await axios.post("http://localhost:5000/rsvp", values);
+      // await axios.post("http://localhost:5000/rsvp", values); local host for testing
+      await axios.post("https://dnbackend.onrender.com/rsvp", values); // production backend
       setIsSubmitted(true);
     } catch (error) {
       console.error(error);
