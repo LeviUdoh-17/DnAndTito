@@ -7,6 +7,7 @@ import GiftRegistrySection from './components/GiftRegistry';
 import ParticleBackground from './components/ParticleBackground';
 import Navbar from './components/Navbar';
 import ProposalVideoSection from './components/Proposalvideosection';
+import WeddingDetailsSection from './components/WeddingDetails';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <ProposalVideoSection videoSrc='https://res.cloudinary.com/drnwxb8cm/video/upload/v1769119360/Por_1_wmtqtp.mp4' />
         <OurStorySection />
         <GiftRegistrySection />
+        <WeddingDetailsSection />
       </div>
     </div>
   )
