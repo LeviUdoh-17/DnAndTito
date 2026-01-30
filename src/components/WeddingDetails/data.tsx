@@ -69,6 +69,7 @@ export const dressCodes: DressCode[] = [
 ];
 
 export const contacts: Contact[] = [
-  { name: "Kemi", phone: "+234 801 234 5678", role: "Bride's Side" },
-  { name: "James", phone: "+234 802 345 6789", role: "Groom's Side" },
+  { name: "Bolujola", phone: "09011106306", role: "Groom's Side" },
+  { name: "Mercy", phone: "08179110062", role: "Groom's Side" },
+  { name: "Kemi", phone: "08166002307", role: "Groom's Side" },
 ];

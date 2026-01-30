@@ -32,7 +32,6 @@ export const ContactCard = ({ contacts }: ContactCardProps) => (
           </div>
           <div className="text-left">
             <p className="text-white font-medium">{contact.name}</p>
-            <p className="text-stone-400 text-sm">{contact.role}</p>
             <p className="text-purple-300 text-sm mt-0.5">{contact.phone}</p>
           </div>
         </a>

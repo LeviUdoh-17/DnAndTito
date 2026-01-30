@@ -38,7 +38,7 @@ export const MobilePhotoStrip = ({ media }: MobilePhotoStripProps) => {
   return (
     <div className="lg:hidden mb-8">
       <div 
-        className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl"
+        className="relative w-full aspect-[4/6] rounded-2xl overflow-hidden shadow-xl"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >

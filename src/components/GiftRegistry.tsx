@@ -9,12 +9,12 @@ const wishlistItems = [
   { 
     label: "Washing Machine", 
     category: "Laundry",
-    image: "https://unsplash.com/photos/5cpBWEl6y6c/download?force=true" 
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4fdgcAGWSpmYyZQBS87hjLO2auy0ht9DZw&s" 
   },
   { 
-    label: "Deep Freezer", 
+    label: "Fridge Freezer", 
     category: "Appliances",
-    image: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/69/3143292/1.jpg?8465" 
+    image: "https://www.electriq.co.uk/Images/eiQFD70FF_4_Supersize.jpg?v=16" 
   },
   { 
     label: "TV (55 Inches)", 
@@ -34,12 +34,12 @@ const wishlistItems = [
   { 
     label: "Air Fryer", 
     category: "Healthy Living",
-    image: "https://unsplash.com/photos/tdUOpMLDPGo/download?force=true" 
+    image: "https://www.ninjakitchensa.com/media/catalog/product/1/_/1_64.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1200&width=1200&canvas=1200:1200" 
   },
   { 
     label: "Blender Set", 
     category: "Preparation",
-    image: "https://unsplash.com/photos/ZN_86cZrSN0/download?force=true" 
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOY2jqkqxJs_UZwfQbOFDb_8yOTDKRc0enHw&s" 
   },
   { 
     label: "Toasting Machine", 
@@ -49,12 +49,12 @@ const wishlistItems = [
   { 
     label: "12.5kg Gas Cylinder", 
     category: "Utility",
-    image: "https://unsplash.com/photos/rwjz0jBZPqs/download?force=true"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ181Cpf27tDg_vD68fdAS1p6sbAinZcILl2w&s"
   },
   { 
     label: "Kitchen Utensils", 
     category: "Dining",
-    image: "https://unsplash.com/photos/2Cc0KnE3lCs/download?force=true"
+    image: "https://media.post.rvohealth.io/wp-content/uploads/sites/2/2021/10/Stocksy_txpe554e965AnD300_Medium_1322294-1296x827.jpeg"
   },
   { 
     label: "Ironing Board", 
@@ -64,7 +64,52 @@ const wishlistItems = [
   { 
     label: "Shoe Rack", 
     category: "Organization",
-    image: "https://unsplash.com/photos/gIk3ekcetd0/download?force=true"
+    image: "https://m.media-amazon.com/images/I/71F6cfO0cCL._AC_UF894,1000_QL80_.jpg"
+  },
+  { 
+    label: "Plastic Storage Containers", 
+    category: "Organization",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkk4PDMG3NMP7A2UGoWRz3PlKFmErQJvasw&s"
+  },
+  { 
+    label: "Insect Proof Storage Containers", 
+    category: "Organization",
+    image: "https://img.kwcdn.com/product/fancy/63de55ed-c64f-480f-9218-344dd0a378a7.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp"
+  },
+  { 
+    label: "Wooden Hangers", 
+    category: "Organization",
+    image: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/41/2930662/1.jpg?2421"
+  },
+  { 
+    label: "Foldable Storage Bags", 
+    category: "Organization",
+    image: "https://ong.ng/r/cGljdHVyZXMtbmlnZXJpYS5qaWppc3RhdGljLm5ldA/177288480_MzAwLTMwMC01NGNlZDRjNmVh.webp"
+  },
+  { 
+    label: "Nordic Style Self-Adhesive Wall Clock", 
+    category: "Organization",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY9S777umXHeard5Iv09lNUtc0UkvJ0CWhw&s"
+  },
+  { 
+    label: "Clear Storage Boxes with Lids", 
+    category: "Organization",
+    image: "https://m.media-amazon.com/images/I/51pD6Hfw9pL._AC_UL480_QL65_.jpg"
+  },
+  { 
+    label: "Foldable Coat Rack", 
+    category: "Organization",
+    image: "https://images.thdstatic.com/productImages/b902bac3-dae6-467e-98bf-73ff82ab063e/svn/walnut-coat-racks-tg9150-p41-fa_600.jpg"
+  },
+  { 
+    label: "Electric Kettle", 
+    category: "Kitchen Appliances",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PtG-ZU0ZZj0Dszr7x2SvUKbW5T8RwxiAzQ&s"
+  },
+  { 
+    label: "Electric Juicer", 
+    category: "Kitchen Appliances",
+    image: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/6802582/2.jpg?1371"
   },
 ];
 

@@ -31,7 +31,7 @@ export const PhotoGallery = ({ media, side, isActive }: PhotoGalleryProps) => {
         animate={{ opacity: isActive ? 1 : 0.3, x: 0 }}
         transition={{ duration: 0.6 }}
         className={cn(
-          "relative w-56 xl:w-64 h-72 xl:h-80 rounded-2xl overflow-hidden shadow-2xl",
+          "relative w-56 xl:w-64 h-[25rem] xl:h-[30rem] rounded-2xl overflow-hidden shadow-2xl",
           side === "left" ? "rotate-[-4deg]" : "rotate-[4deg]"
         )}
       >
