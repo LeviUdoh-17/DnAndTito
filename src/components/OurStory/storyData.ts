@@ -7,12 +7,14 @@ export const stories: Stories = {
     subtitle: "How I Found My Forever",
     accentColor: "from-[#e6c07b] to-amber-700",
     paragraphs: [
-      "I remember the day clearly — she walked past, and something in me knew. It wasn't love at first sight in the way movies describe it. It was more like recognition, like seeing someone you've been waiting for without knowing you were waiting.",
-      "When I asked her to be my best friend in 2016, I already knew in my heart that this was different. Every Holy Ghost Service, every conversation, every shared agbalumo was a step closer to what I had always believed would happen.",
-      "I joked about marrying her because saying it out loud made it feel real. But deep down, it wasn't a joke — it was a promise I was making to myself, to God, and eventually, to her.",
-      "2021 changed everything. Our friendship deepened into something I couldn't ignore anymore. Every phone call, every prayer together, every moment of growth — I watched her become more beautiful in ways that had nothing to do with appearance.",
-      "When I asked her out, and she requested a year to pray, I respected it completely. That year of waiting only confirmed what I already knew: she was worth every moment of patience.",
-      "On January 1st, 2023, when she finally said yes, it felt like the beginning of everything I had ever hoped for. Our story is proof that God's timing is always perfect.",
+      "I can’t remember the exact day, but I know I was in SS3 when I met her for the first time. I had been invited to her school to play the talking drum and help DJ their cultural party, something I used to do back then, and I went along with a friend.",
+      "I remember seeing her walk out of her class for the first time, and something in me paused. I didn’t speak to her, but deep within me I just knew — this was the right person. I even told my friend that day that she was the one I was going to marry 😂.",
+      "Years later, while I was in polytechnic, I had completely forgotten that moment. Life had moved on, and so had I, until one night when I saw her online on Facebook. By then we were both church members, so I casually messaged her to ask why she was awake so late, and that simple question became the beginning of everything.",
+      "We started talking, and I told her I was coming back home. Not long after, I asked her to be my best friend, and funnily enough, she requested agbalumo as the condition. I agreed, and we planned to meet at camp since my family had just moved there.",
+      "That month, we met at the Holy Ghost Night. I gave her the agbalumo and my sweater because she was cold that night, and from that moment, our friendship truly began. I would visit her house every chance I got, and I slowly realized that I could do anything for her, anytime, any day.",
+      "We have seen each other through good times and bad times. We have grown, struggled, laughed, and stayed together through it all, sticking to each other like glue no matter what life threw our way.",
+      "By my final year in school, the dynamics of our relationship began to change. We spoke every night, and when I came back home, I could no longer ignore what I felt. The feelings were real, deep, and undeniable.",
+      "I didn’t hesitate to tell her that I was going to marry her. At the time, she didn’t quite believe me, but here we are now — about to seal a friendship that started with a drumbeat, an agbalumo, and God’s perfect timing forever."
     ],
     media: [
       { id: "dn1", type: "image", src: "https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124403/WhatsApp_Image_2026-01-23_at_12.13.17_AM_nd3qhw.jpg", caption: "The beginning" },
