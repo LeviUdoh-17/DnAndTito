@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './Navbar';
 
-// Hashtags for cycling animation
 const hashtags = [
   "#ourforeverlookslikethis",
   "#TítòTémi",
@@ -10,7 +9,6 @@ const hashtags = [
   "#theakinsola's"
 ];
 
-// Assets from your story data
 const heroSlides = [
   { 
     type: 'image', 
@@ -22,7 +20,6 @@ const heroSlides = [
   },
   { 
     type: 'image', 
-    // src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300217/631eaa19-51c2-4e63-b01e-83cb5a5d1e31_1_j5xezi.png' 
     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770322773/1_gmtlkl.webp' 
   },
   { 
@@ -35,7 +32,6 @@ export default function MaskedVideoHero() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [currentHashtag, setCurrentHashtag] = useState(0);
 
-    // Auto-advance slides
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
@@ -43,11 +39,10 @@ export default function MaskedVideoHero() {
         return () => clearInterval(timer);
     }, []);
 
-    // Auto-advance hashtags
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentHashtag((prev) => (prev + 1) % hashtags.length);
-        }, 3000); // 3 seconds per hashtag
+        }, 3000); 
         return () => clearInterval(timer);
     }, []);
 
