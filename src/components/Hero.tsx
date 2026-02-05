@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './Navbar';
 
+// Hashtags for cycling animation
+const hashtags = [
+  "#ourforeverlookslikethis",
+  "#TítòTémi",
+  "#TT2026",
+  "#theakinsola's"
+];
+
 // Assets from your story data
 const heroSlides = [
   { 
@@ -24,6 +32,7 @@ const heroSlides = [
 
 export default function MaskedVideoHero() {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentHashtag, setCurrentHashtag] = useState(0);
 
     // Auto-advance slides
     useEffect(() => {
@@ -33,15 +42,25 @@ export default function MaskedVideoHero() {
         return () => clearInterval(timer);
     }, []);
 
+    // Auto-advance hashtags
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentHashtag((prev) => (prev + 1) % hashtags.length);
+        }, 3000); // 3 seconds per hashtag
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <main id="hero" className="h-screen w-full bg-white flex items-center justify-center">
             <div className="relative w-full h-full md:w-[98%] md:h-[94%] border-none md:rounded-tl-[3rem] md:rounded-br-[3rem] overflow-hidden shadow-2xl bg-stone-900">
                 
+                <img src="https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png" className="absolute inset-0 w-full h-full object-cover" alt="DN and Tito's Hero Pic" />
+
                 {/* --- ORIGINAL VIDEO (COMMENTED OUT) --- */}
                 {/* <video className="absolute inset-0 w-full h-full object-cover" src="DN&TITO_Template.mp4" autoPlay loop muted /> */}
 
                 {/* --- NEW SLIDESHOW --- */}
-                <AnimatePresence mode='popLayout'>
+                {/* <AnimatePresence mode='popLayout'>
                     <motion.div
                         key={currentSlide}
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -67,7 +86,7 @@ export default function MaskedVideoHero() {
                             />
                         )}
                     </motion.div>
-                </AnimatePresence>
+                </AnimatePresence> */}
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
@@ -115,13 +134,19 @@ export default function MaskedVideoHero() {
                             Ogun State, Nigeria
                         </p>
                         
-                        {/* --- HASHTAGS ADDED HERE --- */}
-                        <div className="flex gap-3 text-[10px] md:text-xs font-bold text-[#b38728] tracking-widest uppercase mt-1">
-                            <span>#ourforeverlookslikethis</span>
-                            <span>•</span>
-                            <span>#TítòTémi</span>
-                            <span>•</span>
-                            <span>#TT2026</span>
+                        {/* --- HASHTAGS WITH FADE ANIMATION --- */}
+                        <div className="flex gap-3 text-[10px] md:text-xs font-bold text-[#b38728] tracking-widest uppercase mt-1 h-4 overflow-hidden">
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={currentHashtag}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    {hashtags[currentHashtag]}
+                                </motion.span>
+                            </AnimatePresence>
                         </div>
                     </div>
 
