@@ -11,33 +11,30 @@ const hashtags = [
 ];
 
 // Assets from your story data
-// const heroSlides = [
-//   { 
-//     type: 'image', 
-//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124403/WhatsApp_Image_2026-01-23_at_12.13.17_AM_nd3qhw.jpg' 
-//   },
-//   { 
-//     type: 'image', 
-//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124402/WhatsApp_Image_2026-01-23_at_12.13.19_AM_1_sg2ida.jpg' 
-//   },
-//   { 
-//     type: 'video', 
-//     src: 'https://res.cloudinary.com/drnwxb8cm/video/upload/v1769124444/vid1_gjfmfm.mp4' 
-//   },
-//   { 
-//     type: 'image', 
-//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124394/WhatsApp_Image_2026-01-23_at_12.13.16_AM_rgoemo.jpg' 
-//   }
-//  ];
+const heroSlides = [
+  { 
+    type: 'image', 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300308/d9f52837-ee90-4d30-97b1-036ddc6e9677_wl9dln.png' 
+  },
+  { 
+    type: 'image', 
+    // src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300217/631eaa19-51c2-4e63-b01e-83cb5a5d1e31_1_j5xezi.png' 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300734/631eaa19-51c2-4e63-b01e-83cb5a5d1e31_fnqsq1.png' 
+  },
+  { 
+    type: 'image', 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png' 
+  }
+ ];
 
 export default function MaskedVideoHero() {
-    // const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
     const [currentHashtag, setCurrentHashtag] = useState(0);
 
     // Auto-advance slides
     useEffect(() => {
         const timer = setInterval(() => {
-            // setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+            setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
         }, 6000); // 6 seconds per slide
         return () => clearInterval(timer);
     }, []);
@@ -54,13 +51,13 @@ export default function MaskedVideoHero() {
         <main id="hero" className="h-screen w-full bg-white flex items-center justify-center">
             <div className="relative w-full h-full md:w-[98%] md:h-[94%] border-none md:rounded-tl-[3rem] md:rounded-br-[3rem] overflow-hidden shadow-2xl bg-stone-900">
                 
-                <img src="https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png" className="absolute inset-0 w-full h-full object-cover" alt="DN and Tito's Hero Pic" />
+                {/* <img src="https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png" className="absolute inset-0 w-full h-full object-cover" alt="DN and Tito's Hero Pic" /> */}
 
                 {/* --- ORIGINAL VIDEO (COMMENTED OUT) --- */}
                 {/* <video className="absolute inset-0 w-full h-full object-cover" src="DN&TITO_Template.mp4" autoPlay loop muted /> */}
 
                 {/* --- NEW SLIDESHOW --- */}
-                {/* <AnimatePresence mode='popLayout'>
+                <AnimatePresence mode='popLayout'>
                     <motion.div
                         key={currentSlide}
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -86,7 +83,7 @@ export default function MaskedVideoHero() {
                             />
                         )}
                     </motion.div>
-                </AnimatePresence> */}
+                </AnimatePresence> 
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
