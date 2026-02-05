@@ -11,33 +11,33 @@ const hashtags = [
 ];
 
 // Assets from your story data
-const heroSlides = [
-  { 
-    type: 'image', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124403/WhatsApp_Image_2026-01-23_at_12.13.17_AM_nd3qhw.jpg' 
-  },
-  { 
-    type: 'image', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124402/WhatsApp_Image_2026-01-23_at_12.13.19_AM_1_sg2ida.jpg' 
-  },
-  { 
-    type: 'video', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/video/upload/v1769124444/vid1_gjfmfm.mp4' 
-  },
-  { 
-    type: 'image', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124394/WhatsApp_Image_2026-01-23_at_12.13.16_AM_rgoemo.jpg' 
-  }
-];
+// const heroSlides = [
+//   { 
+//     type: 'image', 
+//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124403/WhatsApp_Image_2026-01-23_at_12.13.17_AM_nd3qhw.jpg' 
+//   },
+//   { 
+//     type: 'image', 
+//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124402/WhatsApp_Image_2026-01-23_at_12.13.19_AM_1_sg2ida.jpg' 
+//   },
+//   { 
+//     type: 'video', 
+//     src: 'https://res.cloudinary.com/drnwxb8cm/video/upload/v1769124444/vid1_gjfmfm.mp4' 
+//   },
+//   { 
+//     type: 'image', 
+//     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1769124394/WhatsApp_Image_2026-01-23_at_12.13.16_AM_rgoemo.jpg' 
+//   }
+//  ];
 
 export default function MaskedVideoHero() {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    // const [currentSlide, setCurrentSlide] = useState(0);
     const [currentHashtag, setCurrentHashtag] = useState(0);
 
     // Auto-advance slides
     useEffect(() => {
         const timer = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+            // setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
         }, 6000); // 6 seconds per slide
         return () => clearInterval(timer);
     }, []);
