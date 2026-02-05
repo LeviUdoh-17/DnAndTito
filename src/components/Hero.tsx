@@ -14,6 +14,10 @@ const hashtags = [
 const heroSlides = [
   { 
     type: 'image', 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png' 
+  },
+  { 
+    type: 'image', 
     src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770322773/2_op47rt.webp' 
   },
   { 
