@@ -14,17 +14,17 @@ const hashtags = [
 const heroSlides = [
   { 
     type: 'image', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300308/d9f52837-ee90-4d30-97b1-036ddc6e9677_wl9dln.png' 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770322773/2_op47rt.webp' 
   },
   { 
     type: 'image', 
     // src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300217/631eaa19-51c2-4e63-b01e-83cb5a5d1e31_1_j5xezi.png' 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770300734/631eaa19-51c2-4e63-b01e-83cb5a5d1e31_fnqsq1.png' 
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770322773/1_gmtlkl.webp' 
   },
   { 
     type: 'image', 
-    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770295746/dntito_-_Edited_l6qeqj.png' 
-  }
+    src: 'https://res.cloudinary.com/drnwxb8cm/image/upload/v1770322773/3_ensnqo.webp' 
+  },
  ];
 
 export default function MaskedVideoHero() {
